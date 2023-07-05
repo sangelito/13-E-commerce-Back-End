@@ -1,4 +1,4 @@
-# 13-E-commerce-Back-End
+# 13 E-commerce Back-End 
 ### Description
 The back end for an e-commerce site. Uses a working Express.js API and configured to use Sequelize to interact with a MySQL database.
 
