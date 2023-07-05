@@ -37,7 +37,15 @@ Product.init(
         model: "category",
         key: "id"
       }
-    }
+    },
+     //price column
+     price: {
+      type: DataTypes.DECIMAL(10,2),
+      allowNull: false,
+      validate: { 
+          isDecimal: true
+      }
+  },
     },
   {
     sequelize,
