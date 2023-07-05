@@ -21,6 +21,14 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+      //price column
+      price: {
+        type: DataTypes.DECIMAL(10,2),
+        allowNull: false,
+        validate: { 
+            isDecimal: true
+        }
+    },
     // stock column 
     stock: {
       type: DataTypes.INTEGER,
@@ -38,14 +46,7 @@ Product.init(
         key: "id"
       }
     },
-     //price column
-     price: {
-      type: DataTypes.DECIMAL(10,2),
-      allowNull: false,
-      validate: { 
-          isDecimal: true
-      }
-  },
+   
     },
   {
     sequelize,
